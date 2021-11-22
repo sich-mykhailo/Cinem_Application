@@ -7,7 +7,6 @@ import cinema.shop.spring.service.RoleService;
 import cinema.shop.spring.service.ShoppingCartService;
 import cinema.shop.spring.service.UserService;
 import java.util.HashSet;
-import java.util.Set;
 import org.springframework.stereotype.Service;
 
 @Service
