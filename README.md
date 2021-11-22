@@ -1,18 +1,38 @@
  # Cinema Application
  
- ## Description
-I created this project to demonstrate my knowledge in technologies such as Hibernate, Spring (Core, MVC and Security), Java Core, JSON, OOP and Solid principles. 
- * "Cinema Application" is based on a three-tier architecture that includes Dao, Service and Controller levels.
+ ## Description 
+ * This application is based on a three-tier architecture that includes Dao, Service and Controller levels.
  * You can register a new user, or use existing ones.
  * The program has two roles for access: "ADMIN" and "USER". For example, 
  you can login as a user and you will have access to view the list of movies, but not for editing.
  Only "ADMIN" can change the list of movies in the database.
- * All CRUD operations were created to work with the databas.
+ 
+ * #### The USER has access to these endpoints:
+- GET: /orders
+- POST: /orders/complete
+- PUT: /shopping-carts/movie-sessions
+- GET: /shopping-carts/by-user
+
+* #### The ADMIN has access to these endpoints:
+- POST: /cinema-halls 
+- POST: /movies
+- POST: /movie-sessions
+- PUT: /movie-sessions/{id} 
+- DELETE: /movie-sessions/{id} 
+- GET: /users/by-email 
+
+ * #### Common to both roles:
+ - GET: /cinema-halls 
+ - GET: /movies
+ - GET: /movie-sessions/available
+ - GET: /movie-sessions/{id}
+
+* #### For all, including unregistered:
+ - POST: /register
  
 ## Technologies
 - Spring (Core, MVC and Security)
 - Hibernate
-- JSON
 - Java 11
 - MySQL
 - Maven
