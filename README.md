@@ -1,11 +1,13 @@
  # Cinema Application
  
  ## Description 
- * This application is based on a three-tier architecture that includes Dao, Service and Controller levels.
- * You can register a new user, or use existing ones.
- * The program has two roles for access: "ADMIN" and "USER". For example, 
+ This application is a service for buying movie tickets. You can register a new user, or use existing ones.
+ The program has two roles for access: "ADMIN" and "USER". For example, 
  you can login as a user and you will have access to view the list of movies, but not for editing.
  Only "ADMIN" can change the list of movies in the database.
+ This application is based on a three-tier architecture that includes Dao, Service and Controller levels.
+
+ 
  
  * #### The USER has access to these endpoints:
 - GET: /orders
